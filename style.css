@@ -7,6 +7,69 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    background-color: #1F2632;
+}
+
 .container {
-    width: 1440px;
+    min-width: 1440px;
+    background-color: #313A49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container p {
+    color: #4DD09C;
+}
+
+.container h1 {
+    font-size: 28px;
+}
+
+/* Tablet Version Size */
+@media screen and (min-width: 800px) {
+    .container {
+        width: 800px;
+        background-color: #48556A;
+    }
+}
+
+/* Mobile Version Size */
+@media screen and (min-width: 375px) {
+    .container {
+        min-width: 375px;
+        position: absolute;
+        top: 25%;
+        height: 50vh;
+        margin: 0 30px;
+        border-radius: 20px;
+    }
+    .container h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 25px;
+        padding: 25px 25px;
+        line-height: 150%;
+    }
+
+    .container p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+   .dice-container {
+     position: absolute;
+     bottom: -6%;
+     background-color: #4DD09C;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+   }
 }
