@@ -35,6 +35,14 @@ body {
     font-size: 28px;
 }
 
+.dice-container:after {
+    background-color: #ffffff;
+}
+
+.dice:after {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(71%) saturate(306%) hue-rotate(104deg) brightness(97%) contrast(98%);
+}
+
 /* Tablet Version Size */
 @media screen and (min-width: 800px) {
     .container {
@@ -59,6 +67,12 @@ body {
         font-size: 25px;
         padding: 25px 25px;
         line-height: 150%;
+        opacity: 1;
+    }
+
+    .fade {
+       opacity: 1;
+       transition: opacity 1.5s;
     }
 
     .container p {
