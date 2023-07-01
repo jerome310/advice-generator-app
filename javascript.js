@@ -9,7 +9,7 @@ let advice = () => {
     fetch(url)
       .then((data) => data.json())
       .then((item) => {
-        text.textContent = `${item.slip.advice}`;
+        text.textContent = item.slip.advice;
         adviceCounter.textContent = placeHolder++;
         text.classList.add("fade");
     });

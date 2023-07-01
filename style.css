@@ -31,15 +31,21 @@ body {
     color: #4DD09C;
 }
 
-.container h1 {
+h1 {
     font-size: 28px;
+    opacity: 0;
 }
 
-.dice-container:after {
+.fade {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.dice-container:hover {
     background-color: #ffffff;
 }
 
-.dice:after {
+.dice:hover {
     filter: brightness(0) saturate(100%) invert(62%) sepia(71%) saturate(306%) hue-rotate(104deg) brightness(97%) contrast(98%);
 }
 
@@ -67,12 +73,6 @@ body {
         font-size: 25px;
         padding: 25px 25px;
         line-height: 150%;
-        opacity: 1;
-    }
-
-    .fade {
-       opacity: 1;
-       transition: opacity 1.5s;
     }
 
     .container p {
